@@ -1,0 +1,38 @@
+<html>
+
+<body>
+
+</body>
+<script>
+    // function inh(subType, superType) {
+    //     subType = Object.create(subType.prototype, {
+    //         constructor: {
+    //             enumerable: false,
+    //             configurable: true,
+    //             writable: true,
+    //             value: subType
+    //         }
+    //     })
+    // }
+    // Object.setPrototypeOf(subType, superType)
+    class p {
+        constructor(x, y, color) {
+            this.x = 100
+            this.y = 200
+            this.color = 'yellow'
+        }
+        static to() {
+            return console.log('hello world')
+        }
+    }
+    class b extends p {
+        constructor(x, y, color) {
+            super(x, y)
+            this.color = color
+        }
+    }
+    let c = new b(10, 20, 'red')
+
+</script>
+
+</html>

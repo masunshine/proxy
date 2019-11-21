@@ -1,0 +1,21 @@
+<html>
+
+<body>
+
+</body>
+<script>
+    for (let i = 0; i <= 5; i++) {
+        setTimeout(() => {
+            console.log('第一个----------------' + i)
+        }, i * 1000)
+    }
+    for (var a = 0; a <= 5; a++) {
+        (function (a) {
+            setTimeout(() => {
+                console.log('第二个----------------' + a)
+            }, a * 1000)
+        })(a)
+    }
+</script>
+
+</html>

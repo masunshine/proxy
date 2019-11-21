@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <canvas id="app" width="1000" height="500" style="border: 1px solid #cccccc">
+    </canvas>
+</body>
+<script>
+    // 基础配置
+    var canvas = document.getElementById("app")
+    var can = canvas.getContext("2d")
+    can.fillStyle = "#00f"
+    can.strokeStyle = "#f0f"
+    can.lineWidth = "2"
+    can.textBaseline = 'middle'
+    // 坐标配置
+    can.scale(1, 1)
+    let baidu = "https://www.baidu.com"
+    can.fillText(baidu, 400, 200)
+    // canvas.src = canvas.toDataURL(baidu)
+    // canvas.style.transform = "rotate(" + baidu + "deg)"
+    // document.getElementById("app").appendChild('https://www.baidu.com')
+</script>
+
+</html>
